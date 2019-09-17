@@ -2,8 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	font-size: 10px;
+}
 body{
 	background: #f4f4f4;
+}
+li{
+	list-style: none;
 }
 #login{
 	position: absolute;
@@ -39,4 +45,35 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+}
+.bottom-menu{
+	box-sizing: border-box;
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	bottom: 0;
+	background: white;
+	padding-bottom: 0.5rem;
+
+}
+.bottom-menu ul{
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.bottom-menu li img{
+	width: 30%;
+	
+}
+.bottom-menu li{
+	height: 5rem;
+	text-align: center;
+	margin-top: 0.7rem;
+	
+
+}
+.bottom-menu p{
+	font-size: 1.2rem;
+	line-height: 1.6rem;
 }
