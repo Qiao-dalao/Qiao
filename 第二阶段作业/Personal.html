@@ -7,20 +7,17 @@
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/css-person.css"/>
+<<<<<<< HEAD
 	<link rel="stylesheet" href="css/css-recommend.css">
+=======
+	<link rel="stylesheet" href="css/css-chat.css">
+>>>>>>> 62e84b94ab6516563040a874157cb0b7bff4798d
     <script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
 </head>
 <body>
-	<!-- <div id="login">
-		<p>选择登录方式</p>
-		<button type="button">
-			<img src="image/image-person/login-phone.png" >
-			<span>手机登录</span>
-		</button>
-		<img src="image/image-person/login-logo.png" >
-	</div> -->
+	
 	
 	<div id="index" class="block" style="display: block;">
 		1
@@ -74,18 +71,121 @@
 		3
 	</div>
 	<div id="chat" class="block">
-		4
+		<div class="chatting-top">
+			<p>聊天</p>
+		</div>
+		<div class="chatting-center">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/1.png">
+						<div class="mui-media-body">
+							<span style="position:relative">优惠活动通知<img class="span-img" src="image/image-chatting/7.png"></span><span class="chat-span" >上午 10:58</span>
+							<p class='mui-ellipsis' style="color:#999999;">亲爱哒小主，小多多正在派送[布艺派送中，请您记得查收]</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/2.png">
+						<div class="mui-media-body">
+							<span style="position:relative">品牌入驻通知<img class="span-img" src="image/image-chatting/7.png"></span><span class="chat-span">19/08/06</span>
+							<p class='mui-ellipsis'>vivo旗舰店新店开业</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/3.png">
+						<div class="mui-media-body">
+							<span style="position:relative">乐淘壳</span><span class="chat-span">上午 09:25</span>
+							<p class='mui-ellipsis'>亲，在的</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/4.png">
+						<div class="mui-media-body">
+							<span style="position:relative">鲜米</span></span><span class="chat-span">19/08/23</span>
+							<p class='mui-ellipsis'>亲爱哒~欢迎光临~买我们的食品绝对不会让您吃亏的</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/5.png">
+						<div class="mui-media-body">
+							<span style="position:relative">交易物流通知<img class="span-img" src="image/image-chatting/7.png"></span></span><span class="chat-span">下午 04:45</span>
+							<p class='mui-ellipsis'>订单签收提醒</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="image/image-chatting/6.png">
+						<div class="mui-media-body">
+							<span style="position:relative">秀包时尚女包</span></span><span class="chat-span">19/07/31</span>
+							<p class='mui-ellipsis'>[退款成功]</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div id="chattiing-recommend">
+				<p><img src="image/image-chatting/8.png">精选推荐</p>
+			</div>
+		</div>
 	</div>
 	<div id="person" class="block">
-		5
+		<div id="login">
+			<p>选择登录方式</p>
+			<button type="button">
+				<img src="image/image-person/login-phone.png" >
+				<span>手机登录</span>
+			</button>
+			<img src="image/image-person/login-logo.png" >
+		</div>
+		<div id="person-information">
+			<div>
+				<img src="image/image-person/cat4.jpg" alt="头像" class="photo">
+				<div style="margin:1.5rem 0 0 1.5rem;">
+					<p style="font-size: 2rem;color: black;">155****2454</p>
+					<p>勋章墙</p>
+				</div>
+			</div>
+			
+			<div class="person-pindan">
+				<p style="color: black;">拼单返现</p>
+			</div>
+		</div>
 	</div>
 	<div class="bottom-menu">
-		<ul>
-			<li class="block-button"><img src="image/image-person/首页.png" alt="首页"><p>首页</p></li>
-			<li class="block-button"><img src="image/image-person/推荐.png" alt="推荐"><p>推荐</p></li>
-			<li class="block-button"><img src="image/image-person/搜索.png" alt="搜索"><p>搜索</p></li>
-			<li class="block-button"><img src="image/image-person/聊天.png" alt="聊天"><p>聊天</p></li>
-			<li class="block-button"><img src="image/image-person/个人中心.png" alt="个人中心"><p>个人中心</p></li>
+		<ul id="bottom-main">
+			<li class="block-button">
+				<img src="image/image-person/首页.png" alt="首页" class="bottom-img">
+				<img src="image/image-person/首页hover.png" alt="" class="bottom-hover">
+				<p class="bottom-p">首页</p>
+			</li>
+			<li class="block-button">
+				<img src="image/image-person/推荐.png" alt="推荐" class="bottom-img">
+				<img src="image/image-person/推荐hover.png" alt="" class="bottom-hover">
+				<p class="bottom-p">推荐</p>
+			</li>
+			<li class="block-button">
+				<img src="image/image-person/搜索.png" alt="搜索" class="bottom-img">
+				<img src="image/image-person/搜索hover.png" alt="搜索"  class="bottom-hover" style=" width: 2.16rem;">
+				<p class="bottom-p">搜索</p>
+			</li>
+			<li class="block-button">
+				<img src="image/image-person/聊天.png" alt="聊天" class="bottom-img">
+				<img src="image/image-person/聊天hover.png" alt="聊天" class="bottom-hover">
+				<p class="bottom-p">聊天</p>
+			</li>
+			<li class="block-button">
+				<img src="image/image-person/个人中心.png" alt="个人中心" class="bottom-img">
+				<img src="image/image-person/个人中心hover.png" alt="个人中心" class="bottom-hover">
+				<p class="bottom-p">个人中心</p>
+			</li>
 		</ul>
 	</div>
 	
@@ -94,14 +194,45 @@
 	<script>
 		var blockmain = document.querySelectorAll('.block')
 		var blockbtns = document.querySelectorAll('.block-button')
-		for(var i=0;i<blockbtns.length;i++){
-			blockbtns[i].a=i
+		var login = document.querySelector('#login')
+		var bottommenu = document.querySelector('.bottom-menu')
+		var bottomimg = document.querySelectorAll('.bottom-img')
+		var bottommain = document.querySelector('#bottom-main')
+		var bottomhover = document.querySelectorAll('.bottom-hover')
+		var bottomp = document.querySelectorAll('.bottom-p')
+		var personm=1
+		var num = 0;
+		for(let i=0;i<blockbtns.length;i++){
 			blockbtns[i].onclick=function(){
+				
+				
+				for(h=0;h<bottomhover.length;h++){
+					bottomhover[h].style.display='none'
+					bottomp[h].style.color='#8f8f94'
+					bottomimg[h].style.opacity='1'
+				}
+				bottomimg[i].style.opacity='0'
+				bottomp[i].style.color='red'
+				bottomhover[i].style.display='block'
 				for(var j=0;j<blockmain.length;j++){
 					blockmain[j].style.display='none'
 				}
-				blockmain[this.a].style.display='block'
+				if(i==(blockbtns.length-1)){
+					if(personm==0){
+						login.style.display='block'
+						for(var l=0;l<blockbtns.length;l++){
+							blockbtns[l].style.display='none'
+						}
+						bottommenu.innerHTML=''
+						bottommenu.style.background='#f4f4f4'
+					}
+				}
+				blockmain[i].style.display='block'
+				
 			}
+		
+			
+			
 		}
 	</script>
 </body>
