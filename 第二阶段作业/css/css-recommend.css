@@ -1,6 +1,5 @@
 #recommed{
-    display:block;
-    /* display:flex; */
+    display:block;   
 }
 .recommend-top{
     width: 100%;
@@ -11,6 +10,7 @@
     border-bottom:1px solid #d4d4d4;
     position:fixed;
     top:0;
+    z-index:100;
 }
 .recommend-top p{
     font-size:17px;
@@ -23,28 +23,25 @@
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;  
-    /* margin-bottom:5rem; */
 }
 .recommend-div{
-    width:49.7%;
-    /* height:24.5rem; */
+    width:49.5%;
     background:whitesmoke;
     overflow:hidden;
+    margin-bottom:0.5rem;
 }
 .recommend-div-img{
-    width:49.7%;
-    height:17rem;
+    width:100%;
 }
 .recommend-div-imgs{
-    width:17rem;
+    width:100%;
 }
 .recommend-div-font{
-    width:17rem;
-    height:5.3rem;
+    width:100%;
     padding:0 0 0 0.7rem;
 }
 .recommend-div-font-p1{
-    width:17rem;
+    width:100%;
     overflow:hidden;
     color:#151516;
     font-size:1.6rem;
@@ -66,6 +63,27 @@
     left:0.5rem;
     bottom:0.5rem;
     float:right;
-    border-right:none;
-    
+    border-right:none;    
+}
+.recommend-back span{
+    font-size:16px;
+    position: relative;
+    left:1rem;
+    color:#999999;
+}
+.recommend-back p{
+    font-size:10px;
+    text-align:center;
+   
+    color:#999999;  
+}
+.recommend-back{
+    width:4rem;
+    height:4rem;
+    background:#fff;
+    border-radius:50%;
+    position:fixed;
+    bottom:10rem; 
+    left:33rem; 
+    /* display:none */
 }
