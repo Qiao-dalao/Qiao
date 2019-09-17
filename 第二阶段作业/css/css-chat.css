@@ -1,3 +1,4 @@
+
 .chatting-top{
     width:100%;
     background:#fff;
@@ -5,10 +6,19 @@
     text-align:center;
     line-height:3.5rem;
     border-bottom:1px solid #d4d4d4;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
 }
 .chatting-top p{
     font-size:17px;
     color:#323232;
+}
+#chatting-center{
+    margin-top:3.5rem;
+    margin-bottom:5rem;
+    background:#f3f3f3;
 }
 .span-img{
     width:2.7rem;
@@ -24,9 +34,81 @@
     top:1rem;
     right:1rem;
 }
+.kong{
+    width:100%;
+    height:1rem;
+    background:#F3F3F3
+}
 #chattiing-recommend{
     width:100%;
+    height:3rem;
+    position:relative;
+    text-align:center;
+    line-height:3rem;
     background:#fff;
-    height:4rem;
-    margin-top:1rem
+}
+#chat-img{
+    width:2rem;
+    height:2rem;
+    position:absolute;
+    top:0.4rem;
+    left:13.5rem
+}
+#flexbox{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap
+}
+.chat-div{
+    width:49.5%;
+    height:24.5rem;
+    background:#fff;
+    margin-bottom:0.5rem
+}
+.chat-img-div{
+    width:100%;
+    height:17rem;
+}
+.chat-img-div img{
+    width:100%;
+    height:100%;
+}
+.chat-wenzi{
+    width:100%;
+    height:7rem;
+    margin-top:0.5rem;
+    /* background:yellow; */
+    padding:0 0 0 0.5rem
+}
+.wenzi-img{
+    width:4rem;
+    height:1.7rem;
+
+}
+.chat-details{
+    font-size:14px;
+    color:#151515;
+    margin-bottom:0;
+}
+.chat-minus,.chat-refund{
+    background:#FFF2EA;
+    color:#FF5706;
+    font-size:13px;
+    border-radius:2px;
+    padding:0 0.3rem;
+    margin-right:0.5rem
+}
+.chat-price{
+    font-size:16px;
+    color:#E02E24;
+}
+.chat-num{
+    font-size:13px;
+    color:#999999
+}
+.chat-back{
+    position:fixed;
+    bottom:7rem;
+    right:1rem;
+    background:red;
 }
