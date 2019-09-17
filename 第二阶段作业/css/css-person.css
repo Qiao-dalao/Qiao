@@ -11,6 +11,10 @@ body{
 li{
 	list-style: none;
 }
+#person::-webkit-scrollbar {
+        display: none;
+		overflow-y:auto ;
+    }
 #login{
 	position: absolute;
 	top: 28%;
@@ -48,6 +52,10 @@ li{
 	z-index: 5;
 	left: 25%;
 	width: 50%;
+}
+#bottom-fill{
+	width: 100%;
+	height: 5rem;
 }
 .bottom-menu{
 	box-sizing: border-box;
@@ -121,4 +129,73 @@ li{
 	left: 34.5%;
 	display: none;
 	top: 0;
+}
+.person-redmoney{
+	height: 4.5rem;
+	background: #FDEFEE;
+	border-radius: 1.2rem 1.2rem 0 0 ;
+	margin-top: 2rem !important;
+	line-height: 4.5rem;
+}
+.person-redmoney span{
+	color: #E02E24;
+}
+.person-order,.person-redmoney{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.person-order{
+	height: 3.5rem;
+	margin-top: 2rem;
+}
+.person-buymessage ul{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+.person-buymessage li{
+	text-align: center;
+}
+
+.person-xiugai{
+	width: 80%;
+	height: 2.4rem;
+}
+.person-buymessage li p{
+	font-size: 1.2rem;
+	color: #58595b;
+	margin-top: 0.3rem;
+}
+.person-fenge{
+	width: 100%;
+	height: 1rem;
+	background: #F4F4F4;
+}
+.person-xiugai2{
+	margin-top: 1.5rem;
+}
+.person-xiugai2 li img{
+	width: 50%;
+}
+.person-recommend{
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.person-goods{
+	display: flex;
+	justify-content: space-between;
+}
+.person-goods>div{
+	width: 49.5%;
+}
+.person-goods div img{
+	width: 100%;
+}
+.person-goods p{
+	margin-bottom: 0.5rem;
 }

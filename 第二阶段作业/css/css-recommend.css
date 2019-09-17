@@ -1,3 +1,6 @@
+#recommed{
+    display:block;
+}
 .recommend-top{
     width: 100%;
     background:#fff;
@@ -6,21 +9,56 @@
     line-height:3.5rem;
     border-bottom:1px solid #d4d4d4;
     position:fixed;
+    top:0;
 }
 .recommend-top p{
     font-size:17px;
     color:#323232;
 }
-.recommend-div{
-    width:49.7%;
-    height:20.5rem;
-    background:red;
-    
-}
 .recommend-big-div{
-    width:100%;
+    margin-top:3.5rem;
+    width:100%;  
     height:100%;
     display:flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap:wrap;  
+    margin-bottom:5rem;
+}
+.recommend-div{
+    width:49.7%;
+    height:24.5rem;
+    background:whitesmoke;
+    overflow:hidden;
+}
+.recommend-div-img{
+    width:49.7%;
+    height:17rem;
+}
+.recommend-div-imgs{
+    width:17rem;
+}
+.recommend-div-font{
+    width:17rem;
+    height:5.3rem;
+    padding:0 0 0 0.7rem;
+}
+.recommend-div-font-p1{
+    color:#151516;
+    font-size:1.6rem;
+}
+.recommend-div-font-p2 span{
+    color:#FF5706;
+    background:#FCD3BF;
+}
+.recommend-div-font-p3-span1{
+    color:#E02E24;
+    font-size:2rem;
+}
+.recommend-div-font-p3-span3{
+    border:1px solid #B7B7B8;
+    color:#58595B;
+    padding:0.5rem 1.5rem 0.5rem 0.5rem;
+    border-radius:20%;
+    position: relative;
+    left:1.9rem;
 }
