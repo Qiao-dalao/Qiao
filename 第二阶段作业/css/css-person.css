@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f4f4f4;
+}
+#login{
+	position: absolute;
+	top: 28%;
+	width:100%;
+	
+	
+}
+#login p{
+	color: black;
+	font-size:19px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 41px;
+}
+#login button{
+	width: 80%;
+	background-color: #F6A622;
+	border: none;
+	outline: navajowhite;
+	margin: 0 auto;
+	border-radius: 5px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+#login button *{
+	float: left;
+	margin-left: 10px;
+}
+#login>img{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
