@@ -21,19 +21,46 @@
 		<img src="image/image-person/login-logo.png" >
 	</div> -->
 	
-	
-	
-	
-	
+	<div id="index" class="block" style="display: block;">
+		1
+	</div>
+	<div id="recommend" class="block">
+		2
+	</div>
+	<div id="search" class="block">
+		3
+	</div>
+	<div id="chat" class="block">
+		4
+	</div>
+	<div id="person" class="block">
+		5
+	</div>
 	<div class="bottom-menu">
 		<ul>
-			<li><img src="image/image-person/首页.png" alt="首页"><p>首页</p></li>
-			<li><img src="image/image-person/推荐.png" alt="推荐"><p>推荐</p></li>
-			<li><img src="image/image-person/搜索.png" alt="搜索"><p>搜索</p></li>
-			<li><img src="image/image-person/聊天.png" alt="聊天"><p>聊天</p></li>
-			<li><img src="image/image-person/个人中心.png" alt="个人中心"><p>个人中心</p></li>
+			<li class="block-button"><img src="image/image-person/首页.png" alt="首页"><p>首页</p></li>
+			<li class="block-button"><img src="image/image-person/推荐.png" alt="推荐"><p>推荐</p></li>
+			<li class="block-button"><img src="image/image-person/搜索.png" alt="搜索"><p>搜索</p></li>
+			<li class="block-button"><img src="image/image-person/聊天.png" alt="聊天"><p>聊天</p></li>
+			<li class="block-button"><img src="image/image-person/个人中心.png" alt="个人中心"><p>个人中心</p></li>
 		</ul>
 	</div>
+	
+	
+	
+	<script>
+		var blockmain = document.querySelectorAll('.block')
+		var blockbtns = document.querySelectorAll('.block-button')
+		for(var i=0;i<blockbtns.length;i++){
+			blockbtns[i].a=i
+			blockbtns[i].onclick=function(){
+				for(var j=0;j<blockmain.length;j++){
+					blockmain[j].style.display='none'
+				}
+				blockmain[this.a].style.display='block'
+			}
+		}
+	</script>
 </body>
 </html>
 
