@@ -1,0 +1,20 @@
+.imgs-color{
+	background: white;
+}
+html{
+	font-size: 10px;
+}
+.plic-top{
+	margin-top: 10px;
+}
+
+.publc-fff-bg{
+	background-color: white !important;
+}
+.nine-box li{
+	width: 20%;
+}
+.font-font{
+	font-size: 12px;
+	color: red;
+}
