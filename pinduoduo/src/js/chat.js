@@ -1,7 +1,8 @@
 window.onload=function(){
 	var chatback=document.querySelector('.chat-back')
 	window.onscroll=function(){
-	    if(window.scrollY>400){
+		this.console.log(window.scrollY)
+	    if(window.scrollY>300){
 	        chatback.style.display='block'
 	    }else{
 	        chatback.style.display='none'
@@ -10,4 +11,9 @@ window.onload=function(){
 	chatback.onclick=function(e){
 	    window.scrollTo(0,0)
 	}
+	// var chatdiv=document.querySelectorAll()
+
+
+
+
 }
