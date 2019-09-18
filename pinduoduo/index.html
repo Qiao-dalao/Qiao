@@ -930,14 +930,7 @@
 			</div>
 		</div>
 		
-		<div id="login">
-			<p>选择登录方式</p>
-			<button type="button">
-				<img src="image/image-person/login-phone.png" >
-				<span>手机登录</span>
-			</button>
-			<img src="image/image-person/login-logo.png" >
-		</div>
+		
 		
 	</div>
 	<!-- 底部导航栏填充 -->
@@ -979,14 +972,13 @@
 	<script>
 		var blockmain = document.querySelectorAll('.block')
 		var blockbtns = document.querySelectorAll('.block-button')
-		var login = document.querySelector('#login')
 		var bottommenu = document.querySelector('.bottom-menu')
 		var bottomimg = document.querySelectorAll('.bottom-img')
 		var bottommain = document.querySelector('#bottom-main')
 		var bottomhover = document.querySelectorAll('.bottom-hover')
 		var bottomp = document.querySelectorAll('.bottom-p')
 		var personxianshi = document.querySelector('.person-xianshi')
-		var personm=1
+		var personm=0
 		var num = 0;
 		for(let i=0;i<blockbtns.length;i++){
 			blockbtns[i].onclick=function(){
@@ -1004,21 +996,14 @@
 				if(i==(blockbtns.length-1)){
 					if(personm==0){
 						personxianshi.style.display='none'
-						login.style.display='block'
-						for(var l=0;l<blockbtns.length;l++){
-							blockbtns[l].style.display='none'
-						}
-						bottommenu.innerHTML=''
-						bottommenu.style.background='#f4f4f4'
-						personm=1
+						// personm=1
+						
+						location.href="login.html";
 					}
 				}
 				blockmain[i].style.display='block'
-				
 			}
 		}
-		
-		
 	</script>
 </body>
 </html>

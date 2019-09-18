@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="src/css/css-person.css"/>
+	<script src="src/js/login.js">
+		
+	</script>
+	<style>
+		body{
+			background: #f4f4f4;
+		}
+		#login button:active{
+			opacity: 1;
+		}
+		#login button{
+			opacity: 0.8;
+		}
+		
+		.login-input{
+			margin-top: 1.5rem;
+		}
+		.login-input p{
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		.login-input p span{
+			position: absolute;
+		}
+		.login-input input{
+			width: 86%;
+			height: 5rem;
+			border: none;
+			outline: none;
+			padding-left: 5rem;
+			line-height: 5rem;
+		}
+		.login-input p span img{
+			width: 25%;
+			margin-left: 1rem;
+			margin-top: 1.5rem;
+		}
+		.login-input>div{
+			width: 90%;
+			height: 4.5rem;
+			margin: 0 auto;
+			border: 1px solid 	#DE3025;
+			border-radius: 0.5rem;
+			text-align: center;
+			line-height: 4.5rem;
+			font-size: 1.6rem;
+			color: #DE3025;
+			background: white;
+			margin-top: 0.8rem;
+		}
+		.login-input>span{
+			
+			display: inline-block;
+			margin-left: 2rem;
+			margin-top: 1rem;
+			font-size: 1.2rem;
+			color: #58595b;
+		}
+	</style>
+</head>
+<body>
+	<div id="login">
+		<p>选择登录方式</p>
+		<button type="button" id="denglu-btn">
+			<img src="image/image-person/login-phone.png" >
+			<span>手机登录</span>
+		</button>
+		<img src="image/image-person/login-logo.png" >
+	</div>
+	<div class="login-input" style="display: none;" id="denglu">
+		<p><span><img src="image/image-login/login-账号.png" alt="" /></span><input type="text" placeholder="请输入账号" style="border-top: 0.2rem solid gainsboro;" id="dengluzhanghao"></p>
+		<hr style="width: 90%;float: right;">
+		<p style="margin-bottom: 2rem;"><span><img src="image/image-login/login-密码.png" alt=""></span><input type="password" placeholder="请输入密码" style="border-bottom: 0.2rem solid gainsboro;" id="denglumima"></p>
+		<div style="background: #DE3025; color: #FF969E; " id="denglu-id">
+			同意协议并登录
+		</div>
+		<div id="zhuce-btn">
+			注册
+		</div>
+		<div id="dengluback">
+			返回
+		</div>
+	</div>
+	<div class="login-input" id="zhuce" style="display: none;">
+		<p><span><img src="image/image-login/login-账号.png" alt="" /></span><input type="text" placeholder="请输入账号" style="border-top: 0.2rem solid gainsboro;" id="zhucezhanghao"></p>
+		<hr style="width: 90%;float: right;">
+		<p style="margin-bottom: 2rem;"><span><img src="image/image-login/login-密码.png" alt=""></span><input type="password" placeholder="请输入密码" style="border-bottom: 0.2rem solid gainsboro;" id="zhucemima"></p>
+		<div style="background: #DE3025; color: #FF969E; " id="zhuce-id">
+			注册
+		</div>
+		
+		<div id="zhuceback">
+			返回
+		</div>
+		
+		<span>我已经阅读并同意</span>
+		<span style="margin-left:0.5rem; color: #5b9ce7;">服务协议与隐私政策</span>
+	</div>
+</body>
+</html>
