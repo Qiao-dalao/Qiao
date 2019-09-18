@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+body{
+	background: white;
+}
+.details-top{
+    width:100%;
+    height:30rem;
+    background:red;
+}
+.jiazhuang{
+    width:100%;
+    height:5rem;
+}
