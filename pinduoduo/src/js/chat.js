@@ -1,7 +1,6 @@
 window.onload=function(){
 	var chatback=document.querySelector('.chat-back')
 	window.onscroll=function(){
-		this.console.log(window.scrollY)
 	    if(window.scrollY>300){
 	        chatback.style.display='block'
 	    }else{
@@ -11,7 +10,13 @@ window.onload=function(){
 	chatback.onclick=function(e){
 	    window.scrollTo(0,0)
 	}
-	// var chatdiv=document.querySelectorAll()
+
+	var chatdiv=document.querySelectorAll('.chat-div')
+	for(var i=0;i<chatdiv.length;i++){
+		chatdiv[i].onclick=function(){
+			window.location.href="chat-details.html"
+		}
+	}
 
 
 
