@@ -8,7 +8,7 @@ window.onload=function(){
 	var zhucebtn = document.querySelector('#zhuce-btn')
 	var zhuceid = document.querySelector('#zhuce-id')
 	var dengluid = document.querySelector('#denglu-id')
-	
+	var panduan = document.getElementById('panduan')
 	
 	zhucebtn.onclick=function(){
 		denglu.style.display='none'
@@ -55,7 +55,8 @@ window.onload=function(){
 				if(denglumima.value==arr[i][1]){
 					alert('登录成功')
 					location.href="index.html"
-					personm=1
+					sessionStorage.setItem("personm","1")
+					panduan.innerHTML='1231651'
 					break;
 				}else{
 					alert('密码错误，请重新输入密码')
@@ -70,4 +71,6 @@ window.onload=function(){
 		dengluzhanghao.value=''
 		denglumima.value=''
 	}
+	
+	
 }

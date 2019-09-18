@@ -100,7 +100,7 @@ li{
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	margin-top: 1.5rem;
+	padding-top: 1.5rem;
 }
 #person-information>div:first-child{
 	display: flex;
@@ -198,4 +198,8 @@ li{
 }
 .person-goods p{
 	margin-bottom: 0.5rem;
+}
+#panduan{
+	position: absolute;
+	left: -5000px;
 }

@@ -749,19 +749,19 @@
 						<p>优惠券</p>
 					</li>
 					<li>
-						<img src="image/image-person/商品收藏.png" alt=""  class="person-xiugai">
+						<img src="image/image-person/商品收藏.png" alt=""  class="person-xiugai" style="width: 50%;">
 						<p>商品收藏</p>
 					</li>
 					<li>
-						<img src="image/image-person/店铺收藏.png" alt=""  class="person-xiugai">
+						<img src="image/image-person/店铺收藏.png" alt=""  class="person-xiugai" style="width: 50%;">
 						<p>店铺收藏</p>
 					</li>
 					<li>
-						<img src="image/image-person/历史浏览.png" alt=""  class="person-xiugai">
+						<img src="image/image-person/历史浏览.png" alt=""  class="person-xiugai" style="width: 50%;">
 						<p>历史浏览</p>
 					</li>
 					<li>
-						<img src="image/image-person/退款售后.png" alt=""  class="person-xiugai">
+						<img src="image/image-person/退款售后.png" alt=""  class="person-xiugai" style="width: 50%;">
 						<p>退款售后</p>
 					</li>
 				</ul>
@@ -967,7 +967,13 @@
 			</li>
 		</ul>
 	</div>
-	
+	<div id="panduan">
+		<script>
+			
+			
+		</script>
+		
+	</div>
 	
 	
 	<script>
@@ -979,10 +985,15 @@
 		var bottomhover = document.querySelectorAll('.bottom-hover')
 		var bottomp = document.querySelectorAll('.bottom-p')
 		var personxianshi = document.querySelector('.person-xianshi')
-		var personm=0
+		var personm =0
+		personm=sessionStorage.getItem("personm")
 		var num = 0;
 		for(let i=0;i<blockbtns.length;i++){
+			console.log(personm)
 			blockbtns[i].onclick=function(){
+				personm=sessionStorage.getItem("personm")
+				console.log(personm)
+				console.log(personm)
 				for(h=0;h<bottomhover.length;h++){
 					bottomhover[h].style.display='none'
 					bottomp[h].style.color='#8f8f94'
@@ -997,15 +1008,18 @@
 				if(i==(blockbtns.length-1)){
 					if(personm==0){
 						personxianshi.style.display='none'
-						// personm=1
-						
 						location.href="login.html";
+					}else{
+						person.style.display='block'
+						person.style.background='white'		
 					}
 				}
 				blockmain[i].style.display='block'
 			}
 		}
 	</script>
+	
+	<script src="src/js/login.js"></script>
 </body>
 </html>
 
