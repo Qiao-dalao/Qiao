@@ -1,5 +1,4 @@
 //回到顶部
-window.onload=function(){
 	var recommendback=document.querySelector('.recommend-back')
 	window.onscroll=function(){
 	   if(window.scrollY>100){
@@ -18,14 +17,18 @@ window.onload=function(){
 		var recommendfindreturn=document.querySelector('.recommend-find-return')
 		var recommendFind =document.querySelectorAll('.recommend-div-font-p3-span3')
 		var recommendfindbaodiv=document.querySelector('.recommend-find-baodiv')
-		for(var i=0;i<recommendFind.length-1;i++){
+		console.log(1)
+		for(var i=0;i<recommendFind.length;i++){
 			recommendFind[i].onclick=function(){
-				console.log(1)
+				console.log(this)
 				recommendfindbaodiv.style.display='block'	
-				recommendbaodiv.style.display="none"
+				recommendbaodiv.style.display='none'
 				recommendbottomfill.style.display='none'
 				recommendbottommenu.style.display='none'
 			}
+			recommendFind[i].addEventListener('click',function(){
+				console.log(1)
+			},true)
 		}
 		recommendfindreturn.onclick =function(){
 			console.log(1)	
@@ -62,6 +65,6 @@ window.onload=function(){
 			recommendfindsharediv.style.display='none'
 			rzhezaoceng.style.display='none'
 		}
-}
+
 
 
