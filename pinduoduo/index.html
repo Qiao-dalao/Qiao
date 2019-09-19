@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title></title>
+	<!-- 公用的css -->
+	<link rel="stylesheet" type="text/css" 	href="dist/css/mui.min.css" />
+	<link rel="stylesheet" type="text/css"  href="src/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css"	href="dist/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="src/fonts/mui-icons-extra.ttf" />
+	<!-- 赵健的css -->
     <link rel="stylesheet" type="text/css"  href="src/css/index-css.css" />
-    <link rel="stylesheet" type="text/css" 	href="dist/css/mui.min.css" />
+	<!-- 乔鹏乾的css -->
+    <link rel="stylesheet" type="text/css"  href="src/css/css-recommend.css" />
+	<!-- 宋起君的css -->
 	<link rel="stylesheet" type="text/css" 	href="src/css/css-person.css"/>
-	<link rel="stylesheet" type="text/css"  href="src/css/css-recommend.css">
-	<link rel="stylesheet" type="text/css"  href="src/css/css-chat.css">
-	<link rel="stylesheet" type="text/css"  href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css"	href="dist/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css"  href="src/css/mui.min.css">
-	<link rel="stylesheet" type="text/css"  href="src/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="src/fonts/mui-icons-extra.ttf">
-	<link rel="stylesheet" href="dist/css/font-awesome.css">
+	<!-- 杨金杰的css -->
 	<link rel="stylesheet" href="src/css/sousuo.css">
+	<!-- 刘胜月的css -->
+	<link rel="stylesheet" type="text/css"  href="src/css/css-chat.css">
 	<script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
@@ -2621,23 +2624,23 @@
 			</div>
 			<div class="person-buymessage">
 				<ul>
-					<li>
-						<img src="image/image-person/待付款.png" alt="" style="padding-top: 0.3rem;">
-						<p>待付款</p>
+					<li class="person-pay">
+							<img src="image/image-person/待付款.png" alt="" style="padding-top: 0.3rem;">
+							<p>待付款</p>
 					</li>
-					<li>
+					<li class="person-pay">
 						<img src="image/image-person/待分享.png" alt="">
 						<p>待分享</p>
 					</li>
-					<li>
+					<li class="person-pay">
 						<img src="image/image-person/待发货.png" alt="">
 						<p>待发货</p>
 					</li>
-					<li>
+					<li class="person-pay">
 						<img src="image/image-person/待收货.png" alt="">
 						<p>待收货</p>
 					</li>
-					<li>
+					<li class="person-pay">
 						<img src="image/image-person/待评价.png" alt="">
 						<p>待评价</p>
 					</li>
@@ -2836,9 +2839,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
 	</div>
 	<!-- 底部导航栏填充 -->
 	<div id="bottom-fill"></div>
@@ -2871,7 +2871,8 @@
 				<p class="bottom-p">个人中心</p>
 			</li>
 		</ul>
-	</div>		
+	</div>	
+	<!-- 公用的js -->
 	<script>
 		var blockmain = document.querySelectorAll('.block')
 		var blockbtns = document.querySelectorAll('.block-button')
@@ -2905,14 +2906,18 @@
 			}
 		}
 	</script>
+	<!-- 乔鹏乾的js -->
 	<script src="src/js/login.js"></script>
-	<script src="js/chat.js"></script>
-	<script src="js/index/index.js"></script>
+	<!-- 赵健的js -->
 	<script src="src/js/index/index.js"></script>
+	<!-- 宋启君的js -->
 	<script src="src/js/recommend.js"></script>
+	<!-- 刘胜月的js -->
 	<script src="src/js/chat.js"></script>
-	<script src="dist/js/mui.js"></script>
+	<!-- 杨金杰的js -->
 	<script src="src/js/sousuo.js"></script>
+	<!-- 公用的js -->
+	<script src="dist/js/mui.js"></script>
 </body>
 </html>
 
