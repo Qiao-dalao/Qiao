@@ -11,10 +11,16 @@ body{
 li{
 	list-style: none;
 }
+#person{
+	background: white;
+	overflow-y:auto;
+	height: 100%;
+	width: 100%;
+}
 #person::-webkit-scrollbar {
-        display: none;
-		overflow-y:auto ;
-    }
+	display: none;
+	overflow-y: auto;
+}
 #login{
 	position: absolute;
 	top: 28%;
