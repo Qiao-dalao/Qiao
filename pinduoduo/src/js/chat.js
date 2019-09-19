@@ -14,7 +14,8 @@ window.onload=function(){
 	var chatdiv=document.querySelectorAll('.chat-div')
 	for(var i=0;i<chatdiv.length;i++){
 		chatdiv[i].onclick=function(){
-			window.location.href="chat-details.html"
+			location.href="../../chat-details.html"
+
 		}
 	}
 
