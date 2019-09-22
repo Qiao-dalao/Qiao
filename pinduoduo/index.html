@@ -672,13 +672,14 @@
 		<!-- 搜索 -->
 			<div id="sousuo" style="display: none;">
 				<div>
-					<input type="text" placeholder="板鞋女学生" list="cars">
+					<input type="text" placeholder="板鞋女学生" list="cars" id="sousuo-neirong">
 					<datalist id="cars"> 
-						<option value ="衣服"></option>
+						<option value ="鞋子"></option>
 						<option value ="茶壶"></option>
 						<option value ="电视机"></option>
 					</datalist>
 					<a id="back">取消</a>
+					<a href="#" style="position: absolute; right: 1.5rem;top: 4rem;" id="sousuo-sou">搜索</a>
 				</div>
 				<div>
 					<h5><span class="fa fa-lightbulb-o"></span>&nbsp;&nbsp;更多搜索方式</h5>
@@ -2696,8 +2697,11 @@
 			<div class="person-buymessage" style="margin-top: 2.5rem;">
 				<ul>
 					<li>
-						<img src="image/image-person/优惠券.png" alt="" style="padding-top: 0.3rem;" class="person-xiugai">
-						<p>优惠券</p>
+						<a href="person-coupons.html">
+							<img src="image/image-person/优惠券.png" alt="" style="padding-top: 0.3rem;" class="person-xiugai">
+							<p>优惠券</p>
+						</a>
+						
 					</li>
 					<li>
 						<a href="person-shoucang.html">
@@ -2929,9 +2933,10 @@
 		var bottomp = document.querySelectorAll('.bottom-p')
 		var personxianshi = document.querySelector('.person-xianshi')
 		var loginm = sessionStorage.getItem("loginm");
-		if(loginm!=1){
-			location.href="login.html"
-		}
+		var sousuosou = document.querySelector('#sousuo-sou');
+		
+		
+		
 		var num = 0;
 		for(let i=0;i<blockbtns.length;i++){
 			
@@ -2942,6 +2947,11 @@
 					bottomp[h].style.color='#8f8f94'
 					bottomimg[h].style.opacity='1'
 				}
+				if(i==bottomhover.length-1){
+					if(loginm!=1){
+						location.href="login.html"
+					}
+				}
 				bottomimg[i].style.opacity='0'
 				bottomp[i].style.color='red'
 				bottomhover[i].style.display='block'
@@ -2951,6 +2961,16 @@
 				blockmain[i].style.display='block'
 			}
 		}
+		sousuosou.addEventListener('click',function(){
+			var sousuo = document.querySelector('#sousuo-neirong')
+			if(sousuo.value=='鞋子'){
+				console.log(sousuo.value)
+				location.href="chat-details.html"
+			}else if(sousuo.value!='鞋子'){
+				alert('无此商品')
+			}
+		},true)
+		
 	</script>
 	<!-- 乔鹏乾的js -->
 	<script src="dist/js/login.js"></script>

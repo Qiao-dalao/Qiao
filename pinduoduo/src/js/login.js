@@ -54,7 +54,7 @@ window.onload=function(){
 			if(dengluzhanghao.value==arr[i][0]){
 				if(denglumima.value==arr[i][1]){
 					alert('登录成功')
-					location.href="index.html"
+					location.href="index.html?loginm=1"
 					sessionStorage.setItem("loginm","1")
 					panduan.innerHTML='1231651'
 					break;
