@@ -1,0 +1,160 @@
+#search{
+    width:100%;
+    text-align: center;
+}
+#search>ul{
+    width:100%;
+    height:15%;
+    position: relative;
+    background:white;
+    border-bottom:2px solid #ECECEC;
+    padding:5%;
+}
+#search>ul>img{
+    position: absolute;
+    top:15%;
+    right:10%;
+}
+.input{
+    height:4rem;
+    background:#ECECEC;
+    border-radius:10px;
+}
+#search>ul>div{
+    position: relative;
+}
+#search>ul>div>p{
+    width:80%;
+    height:20px;
+    position: absolute;
+    top:20%;
+    left:10%;
+    font-size:18px;
+}
+#search>ul>div>p>img:first-of-type{
+    height:1.5rem;
+    margin-right:5%;
+}
+#search>ul>div>p>img:last-of-type{
+    height:1.5rem;
+    float:right;
+}
+#search>div{
+    height:49.5rem;
+    overflow: hidden;
+    display:flex;
+}
+#liborder{
+    width:20%;
+    height:100%;
+    overflow-y: auto;
+	position: fixed;
+	margin-top: 33%;
+}
+#liborder::-webkit-scrollbar {
+    display: none;
+    overflow-y:auto ;
+}
+#liborder>ul{
+    clear:both;
+    background:#F8F8F8;
+}
+#liborder>ul>li{
+    padding:20% 0;
+    position: relative;
+}
+#liborder>ul>li>a{
+    color:black;
+}
+.hongtiao{
+    width:3%;
+    height:60%;
+    position:absolute;
+    top:20%;
+    left:0px;
+    background:red;
+    display:none;
+}
+#neirong{
+    width:80%;
+    height:250%;
+    /* padding:5%; */
+    background:white;
+    overflow-y: auto;
+	text-align: right;
+	margin-left: 20%;
+	padding-top: 35%;
+}
+#neirong::-webkit-scrollbar {
+    display: none;
+    overflow-y:auto ;
+}
+.kaitou{
+    height:2rem;
+}
+.kaitou>span{
+    float:left;
+}
+.kaitou>a{
+    float:right;
+    color:#B4B4B4;
+}
+.kaitou>img{
+    height:2rem;
+    float:left;
+    margin-left:1rem;
+}
+.neirongkuan>ul{
+    margin-top:2px;
+    display:flex;
+    justify-content:space-around;
+}
+.neirongxiang{
+    width:7rem;
+}
+.neirongxiang>p{
+    font-size:1.5rem;
+    color:black;
+}
+.neirongxiang>img{
+    height:7rem;
+}
+.img{
+    width:90%;
+}
+#sousuo{
+    width:100%;
+    height:100%;
+    background:white;
+    position:absolute;
+    z-index:10;
+    padding:2%;
+    display:none;
+}
+#sousuo>div>input{
+    width:80%;
+    background:#EDEDED;
+    border:none;
+    border-radius:6px;
+}
+#sousuo>div>a{
+    color:#9C9C9C;
+    margin-left:5%;
+}
+#sousuo>div>h5{
+    margin-left:2rem;
+}
+#sousuo>div>div{
+    height:5rem;
+}
+#sousuo>div>div>p{
+    color:black;
+    background:#F4F4F4;
+    float:left;
+    margin:1rem;
+    padding:0.5rem 1rem;
+    border-radius:50px;
+}
+#sousuo>div>div>p>span{
+    color:#E1564C;
+}

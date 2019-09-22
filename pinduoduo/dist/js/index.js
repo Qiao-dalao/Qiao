@@ -1,0 +1,1 @@
+window.onload=function(){mui(".mui-slider").slider({interval:1e3}),document.querySelector(".mui-slider").addEventListener("slider",function(){console.log("你正在看第"+(event.detail.slideNumber+1)+"轮播图")})};
