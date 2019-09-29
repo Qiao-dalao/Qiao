@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="dist/css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="dist/css/css-person-order.css"/>
+		<style type="text/css">
+			body{
+				background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="order-top">
+			<div>
+				<p>我的订单</p>
+				<p id="back"><</p>
+			</div>
+			<div id="order-search">
+				<input type="text" name="" id="" value="" />
+			</div>
+			<div id="order-xinxi">
+				<ul>
+					<li>全部</li>
+					<li style="border-bottom: 0.3rem solid red;">待付款</li>
+					<li>待分享</li>
+					<li>待发货</li>
+					<li>待收货</li>
+					<li>待评价</li>
+				</ul>
+			</div>
+		</div>
+		<div id="order-fill"></div>
+		<div id="zhuijia">
+			<div>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="src/js/concat.js">
+			
+		</script>
+		<script type="text/javascript">
+			var back = document.querySelector('#back')
+			var zhuijia = document.querySelector('#zhuijia')
+			back.onclick=function(){
+				history.go(-1)
+			}
+			setInterval(function(){
+				
+				zhuijia.innerHTML=sessionStorage.getItem('one')
+			},1)
+		</script>
+	</body>
+</html>

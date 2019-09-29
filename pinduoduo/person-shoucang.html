@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="dist/css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="dist/css/css-person-order.css"/>
+		<style type="text/css">
+			body{
+				background: white;
+			}
+			.shoucang-bottom{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+				height: 5%;
+				border: 1px solid gainsboro;
+			}
+			.shoucang-main tr{
+				width: 100%;
+				height: 12rem;
+				display: flex;
+				overflow: hidden;
+			}
+			.shoucang-main tr td img{
+				width: 100%;
+			}
+			.shoucang-main tr td:first-child{
+				width: 20%;
+				text-align: center;
+				line-height: 12rem;
+			}
+			.shoucang-main tr td:nth-child(2){
+				width: 30%;
+			}
+			.numctrl{
+				width: 2rem !important;
+				height: 2rem;
+				line-height: 2rem;
+				border-radius:50% ;
+				padding: 0;
+				text-align: center;
+				border: 1px solid black;
+			}
+			.shuliang{
+				width:2rem !important;
+				height: 2rem !important;
+				text-align: center;
+				padding: 0 !important;
+			}
+			.name{
+				width: 40%;
+				margin-left: 10%;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				
+			}
+			.shoucang-bottom p{
+				color: white;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				padding:0;
+			}
+			.order-pay-way{
+				display: none;
+				width: 20rem;
+				margin: 0 auto;
+			}
+			.order-pay-way img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="order-top">
+			<div>
+				<p>商品收藏</p>
+				<p><a href="index.html"><</a></p>
+			</div>
+			<div id="order-search">
+				<input type="text" name="" id="" value="" />
+			</div>
+		</div>
+		<div id="order-fill" style="height: 11.5rem;"></div>
+		<div class="shoucang-main">
+			<table>
+				<tr>
+					<td><input type="checkbox" class="xuangou"></td>
+					<td><img src="http://t00img.yangkeduo.com/goods/images/2018-10-15/d103dbfec97139466f3d1d5dc915c702.jpeg?imageMogr2/format/webp/quality/50"></td>
+					<td class="name">
+						<div>
+							这是一个茶壶
+						</div>
+						<div style="display: flex;align-items: flex-end;">
+							<p>单价:<span class="price">100</span>元&nbsp;<button class="numctrl">+</button>
+								<input type="text" value="1" class="shuliang" disabled="disabled"/>
+								<button class="numctrl">-</button></p>
+							
+						</div>
+					</td>
+					
+					<td style="position: absolute; right: 1000px;">总计:<span class="total">10</span>元</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="xuangou"></td>
+					<td><img src="http://t00img.yangkeduo.com/goods/images/2019-09-02/27d2c69a7569365f8653a5f2391dca1f.jpeg?imageMogr2/format/webp/quality/50"></td>
+					<td class="name">
+						<div>
+							这是一件衣服
+						</div>
+						<div style="display: flex;align-items: flex-end;">
+							<p>单价:<span class="price">200</span>元&nbsp;<button class="numctrl">+</button>
+								<input type="text" value="1" class="shuliang" disabled="disabled"/>
+								<button class="numctrl">-</button></p>
+							
+						</div>
+					</td>
+					<td style="position: absolute; right: 1000px;">总计:<span class="total">11</span>元</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="xuangou"></td>
+					<td><img src="http://t00img.yangkeduo.com/goods/images/2018-09-18/2ca04b8d036d9ee82549489575d05b05.jpeg?imageMogr2/format/webp/quality/50"></td>
+					<td class="name">
+						<div>
+							这是一个女式睡衣
+						</div>
+						<div style="display: flex;align-items: flex-end;">
+							<p style="float: left;">单价:<span class="price">300</span>元 &nbsp;
+							<button class="numctrl">+</button>
+							<input type="text" value="1" class="shuliang" disabled="disabled"/>
+							<button class="numctrl">-</button></p>
+						</div>
+					</td>
+					<td style="position: absolute; right: 1000px;">总计:<span class="total">12</span>元</td>
+				</tr>
+				<tr>
+					<td style="float: left;"><button id="allchose">全选</button></td>
+					<td style="float: left;"><button id="allchoseno">全不选</button></td>
+					<td style="float: left;"><button id="fan-chose">反选</button></td>
+	
+			</table>
+		</div>
+		<div class="order-pay-way" >
+			<img src="image/image-person/pay.jpg" >
+			<p style="color: black;text-align: center;">请扫码支付</p>
+		</div>
+		<div class="shoucang-bottom">
+			<p style="width: 80%;color: black;">合计￥<span id="zongjia" style="color: red;font-size: 3rem;">0</span></p>
+			<p style="width: 20%;background: red;margin: 0;" id="order-pay">合并支付</p>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var numctrl = document.getElementsByClassName('numctrl')
+			var shuliang = document.getElementsByClassName('shuliang')
+			var price = document.getElementsByClassName('price')
+			var total = document.getElementsByClassName('total')
+			var zongjia = document.getElementById('zongjia')
+			var xuangou = document.getElementsByClassName('xuangou')
+			var allchose = document.getElementById('allchose')
+			var allchoseno = document.getElementById('allchoseno')
+			var fanchose = document.getElementById('fan-chose')
+			var orderpay = document.getElementById('order-pay')
+			var shoucangmain = document.querySelector('.shoucang-main')
+			var shoucangbottom = document.querySelector('.shoucang-bottom')
+			var orderway = document.querySelector('.order-pay-way')
+			orderpay.onclick=function(){
+				if((zongjia.innerHTML-0)==0){
+					alert('请选择商品')
+				}else{
+					shoucangmain.style.display='none'
+					shoucangbottom.style.display='none'
+					orderway.style.display='block'
+				}
+				
+			}
+			
+			for(var f=0;f<price.length;f++){
+				total[f].innerHTML=price[f].innerHTML
+			}
+			for(var i=0;i<numctrl.length;i++){
+				numctrl[i].a=i	
+				numctrl[i].onclick=function(){
+					var j=parseInt(this.a/2)
+					if((this.a)%2!=0){
+						if(shuliang[j].value>1){
+							shuliang[j].value--
+							if(xuangou[j].checked==true){
+								zongjia.innerHTML=(zongjia.innerHTML-0)-(price[j].innerHTML-0)	
+					}
+						}else{
+							alert('数量最少为1')
+							shuliang[j].value='1'
+						}
+					}else{
+						shuliang[j].value++
+						if(xuangou[j].checked==true){
+								zongjia.innerHTML=(zongjia.innerHTML-0)+(price[j].innerHTML-0)
+						}
+					}
+					total[j].innerHTML=(price[j].innerHTML-0)*(shuliang[j].value-0)	
+				}
+			}
+			for(var t=0;t<xuangou.length;t++){
+				xuangou[t].b=t	
+				xuangou[t].onclick=function(){
+					if(xuangou[this.b].checked==true){
+						zongjia.innerHTML=(total[this.b].innerHTML-0)+(zongjia.innerHTML-0)
+					}else{
+						zongjia.innerHTML=(zongjia.innerHTML-0)-(total[this.b].innerHTML-0)
+					}	
+				}
+			}
+			for(var a=0;a<shuliang.length;a++){
+				shuliang[a].b=a
+				shuliang[a].onchange=function(){
+					c=total[this.b].innerHTML
+					if(shuliang[this.b].value>0){
+						total[this.b].innerHTML=(shuliang[this.b].value-0)*(price[this.b].innerHTML-0)
+						// zongjia.innerHTML=(total[this.b].innerHTML-0)+(zongjia.innerHTML-0)-(c-0)
+					}else{
+						alert('数量最小为1')
+						shuliang[this.b].value='1'
+						total[this.b].innerHTML=(shuliang[this.b].value-0)*(price[this.b].innerHTML-0)
+						zongjia.innerHTML=(total[this.b].innerHTML-0)+(zongjia.innerHTML-0)-(c-0)
+					}
+				}
+			}	
+			allchose.onclick=function(){
+				if(xuangou[0].checked&&xuangou[1].checked&&xuangou[2].checked){
+					for(var u=0;u<xuangou.length;u++){
+					xuangou[u].checked=false
+				}
+				zongjia.innerHTML=0
+				}else{
+					zongjia.innerHTML=0
+					for(var u=0;u<xuangou.length;u++){
+					xuangou[u].checked=true
+					zongjia.innerHTML=(zongjia.innerHTML-0)+(total[u].innerHTML-0)
+					
+				}
+				}
+			}
+			function noxuan(){
+				allchoseno.onclick=function(){
+				for(var u=0;u<xuangou.length;u++){
+					xuangou[u].checked=false
+				}
+				zongjia.innerHTML=0
+			}
+			}
+			noxuan()
+			
+			fanchose.onclick=function(){
+				for(var u=0;u<xuangou.length;u++){
+					if(xuangou[u].checked==false){
+						zongjia.innerHTML=(zongjia.innerHTML-0)+(total[u].innerHTML-0)
+						xuangou[u].checked=true
+						
+					}else if(xuangou[u].checked==true){
+						zongjia.innerHTML=(zongjia.innerHTML-0)-(total[u].innerHTML-0)
+						xuangou[u].checked=false
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
