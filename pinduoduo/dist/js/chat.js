@@ -1,1 +1,0 @@
-window.onload=function(){var o=document.querySelector(".chat-back");window.onscroll=function(){300<window.scrollY?o.style.display="block":o.style.display="none"},o.onclick=function(o){window.scrollTo(0,0)};for(var l=document.querySelectorAll(".chat-div"),n=0;n<l.length;n++)console.log(a),l[n].onclick=function(){location.href="../../chat-details.html"}};
